@@ -1,0 +1,105 @@
+\documentclass{endm}
+\usepackage{endmmacro}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{lscape}
+\usepackage{CJK}
+
+\usepackage{amsmath}
+\usepackage{subfigure}
+\usepackage{hyperref}
+\usepackage{multirow}
+% The following is enclosed to allow easy detection of differences in
+% ascii coding.
+% Upper-case    A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+% Lower-case    a b c d e f g h i j k l m n o p q r s t u v w x y z
+% Digits        0 1 2 3 4 5 6 7 8 9
+% Exclamation   !           Double quote "          Hash (number) #
+% Dollar        $           Percent      %          Ampersand     &
+% Acute accent  '           Left paren   (          Right paren   )
+% Asterisk      *           Plus         +          Comma         ,
+% Minus         -           Point        .          Solidus       /
+% Colon         :           Semicolon  7  ;          Less than     <
+% Equals        =           Greater than >          Question mark ?
+% At            @           Left bracket [          Backslash     \
+% Right bracket ]           Circumflex   ^          Underscore    _
+% Grave accent  `           Left brace   {          Vertical bar  |
+% Right brace   }           Tilde        ~
+
+\newcommand{\Nat}{{\mathbb N}}
+\newcommand{\Real}{{\mathbb R}}
+\def\lastname{Ye}
+
+\begin{document}
+
+\begin{CJK}{UTF8}{song}
+% DO NOT REMOVE: Creates space for Elsevier logo, ScienceDirect logo
+% and ENDM logo
+\begin{verbatim}\end{verbatim}\vspace{2.5cm}
+
+
+\begin{frontmatter}
+% \title{A Graph based Approach to Mine Multilingual Word Associations from Wikipedia}
+\title{Mining Cross-language Association Dictionary from Wikipedia for Cross-Language Information Retrieval}
+
+
+\author{Zheng Ye \thanksref{myemail}}
+\address{School of Information Technology\\ York University\\ Toronto, Ontario, M3J 1P3, Canada}
+
+
+\author{Jimmy Huang \thanksref{coemail}}
+\address{School of Information Technology\\ York University\\
+   Toronto, Ontario, M3J 1P3, Canada} 
+
+\author{Hongfei Lin \thanksref{coemail1}}
+\address{Department of Computer Science and Engineering\\ Dalian University of Technology\\ Dalian, Liaoning, 116023, China}
+
+\author{Ben He\thanksref{coemail2}}
+\address{School of Information Technology\\ York University\\
+   Toronto, Ontario, M3J 1P3, Canada} 
+\thanks[myemail]{Email:
+   \href{mailto:yezheng@yorku.ca} {\texttt{\normalshape
+   yezheng@yorku.ca}}} 
+\thanks[coemail]{Email:
+   \href{mailto:jhuang@yorku.ca} {\texttt{\normalshape
+   jhuang@yorku.ca}}}
+\thanks[coemail1]{Email:
+   \href{mailto:hflin@dlut.edu.cn} {\texttt{\normalshape
+   hflin@dlut.edu.cn}}}
+\thanks[coemail2]{Email:
+   \href{mailto:benhe@yorku.ca} {\texttt{\normalshape
+   benhe@yorku.ca}}}
+
+
+\newpage
+\begin{abstract}
+Wikipedia has various impressive characteristics, such as a dense link structure and a huge amount of articles in
+different languages, which make it a notable Web corpus for knowledge extraction and mining.
+In this paper, we focus on exploring its potential of mining a cross-language association dictionary (CLAD). 
+In particular, based on our analysis of Wikipedia structure and motivated by a
+psychological theory of word meaning, we propose a graph-based approach to constructing a
+cross-language association dictionary from Wikipedia, which could be used in a series of cross language accessing or
+processing applications. In order to evaluation the quality of the mined CLAD, we explore two different applications 
+in the cross-language information retrieval (CLIR). First, we use the obtained CLAD to conduct cross-language
+query expansion experiments; and second, we use it to  filter out translation candidates with low translation
+probabilities. Experimental results on a variety of standard CLIR test collections show that the CLIR retrieval
+performance can be significantly improved on both two applications of CLAD. We conclude that it is possible to mine a
+cross-language association dictionary with good quality from Wikipedia. 
+
+\end{abstract}
+\begin{keyword}
+Association Dictionary, Wikipedia, CLIR.
+\end{keyword}
+
+\end{frontmatter}
+
+\section{Introduction}\label{s:introduce}
+
+
+\bibliographystyle{endm}
+\bibliography{ref}
+
+
+\end{CJK}
+
+\end{document}
