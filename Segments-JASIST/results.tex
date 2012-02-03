@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{multirow}
+
+\begin{document}
+
+\section{Evaluation} % (fold)
+\label{sec:evaluation}
+
+\subsection{Data Sets} % (fold)
+\label{sub:data_sets}
+We consider four data sets in our evaluation.
+
+\begin{enumerate}
+	\item USHMM Names
+	\item USHMM Spoken Names
+	\item Medical Words
+	\item US Census Sir Names
+\end{enumerate}
+
+Use of these data sets allow us to evaluate Segments over a variety of potential user inputs and environments.  For example, the US Census Sir Names data set, which contains roughly 90,000 names, is a good evaluation of the scalability of Segments.  Inversely, the USHMM Names data set is an evaluation over a small data set with many languages.  A detailed description of each data set along with justification for its use follows.
+
+
+\begin{table}
+	\centering
+	\caption{Data Set Statistics}
+	\begin{tabular}{|l|c|c|c|c|c|c|}
+		\hline
+		\multirow{2}{*}{\textbf{Name}} & \multirow{2}{*}{\textbf{Size}} & \multicolumn{5}{|c|}{\textbf{Query Stats}}\\
+		\cline{3-7}
+		  & & \textbf{Mean} & \textbf{Min} & \textbf{Max} & \textbf{Median} & \textbf{Mode} \\
+		\hline
+		USHMM Spoken Names & 249 & 9.80 & 5 & 28 & 9 & 8 \\
+		USHMM Names & 656 & 63.77 & 7 & 164 & 54 & 60 \\
+		Medical & 9,883 & 10.58 & 2 & 30 & 10 & 10 \\
+		US Census Sir Names & 88,799 & 7.83 & 3 & 14 & 8 & 7 \\
+		\hline
+	\end{tabular}
+	\label{tab:query_performance}
+\end{table}
+
+\subsubsection{USHMM Names} % (fold)
+\label{ssub:ushmm_names}
+
+% subsubsection ushmm_names (end)
+
+
+
+\subsubsection{USHMM Spoken Names} % (fold)
+\label{ssub:ushmm_spoken_names}
+
+% subsubsection ushmm_spoken_names (end)
+
+% subsection data_sets (end)
+
+% section evaluation (end)
+
+\end{document}
